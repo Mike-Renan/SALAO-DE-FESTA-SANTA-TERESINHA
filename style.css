@@ -212,7 +212,7 @@ footer {
      background-color: transparent
   }
 .logo-text{
-  width: 308px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,15 +221,15 @@ footer {
 .logo img {
     width: 300px;
     height: auto;
-    display: none;
+    display: none; /* Esconde o logo grande */
 }
-  .menu.active {
+  /* .menu.active {
     display: flex;
    
   }
 
   .menu-toggle {
     display: block;
-  }
+  } */
 
 }
