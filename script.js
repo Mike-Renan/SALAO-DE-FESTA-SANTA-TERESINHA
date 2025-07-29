@@ -2,18 +2,18 @@ const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 const links = document.querySelectorAll('.menu a');
 
-// Abre ou fecha o menu ao clicar no botão
-toggle.addEventListener('click', (event) => {
-  event.stopPropagation();
-  menu.classList.toggle('active');
-});
+// // Abre ou fecha o menu ao clicar no botão
+// toggle.addEventListener('click', (event) => {
+//   event.stopPropagation();
+//   menu.classList.toggle('active');
+// });
 
-// Fecha o menu ao clicar em qualquer link dentro do menu
-links.forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('active');
-  });
-});
+// // Fecha o menu ao clicar em qualquer link dentro do menu
+// links.forEach(link => {
+//   link.addEventListener('click', () => {
+//     menu.classList.remove('active');
+//   });
+// });
 
 
 const positions = {
