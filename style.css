@@ -22,6 +22,10 @@ body {
   width: 300px;
   height: auto;
 }
+.logo-text{
+  width: 200px;
+  display: none;
+}
 .menu {
   display: flex;
   gap: 20px;
@@ -194,12 +198,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  
-
-
-
- 
-  
+/*   
   .menu {
     display: none;
     flex-direction: row;
@@ -207,12 +206,17 @@ footer {
     top: 7rem;
     right: 0;
     width: 100%;
-    height: auto;
+    height: auto;          !-- caso cliente queira que o menu fique abaixo do logo
+     flex-direction: column;
     padding: 2rem 0;
      align-items: center;
-     background-color: transparent
+     background-color: transparent */
   }
-    
+.logo-text{
+  width: 308px;
+  display: flex;
+  margin: 11px auto;
+}
   
 .logo img {
     width: 300px;
@@ -228,4 +232,3 @@ footer {
     display: block;
   }
 
-}
