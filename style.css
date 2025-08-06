@@ -21,6 +21,7 @@ body {
 .logo img {
   width: 300px;
   height: auto;
+  margin-top: 15px;
 }
 .logo-text{
   width: 200px;
@@ -92,7 +93,7 @@ body {
 }
 
 #galeria {
-  max-width: 900px;
+  max-width: 90%;
   margin: auto;
 }
 
