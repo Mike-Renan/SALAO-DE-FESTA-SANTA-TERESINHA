@@ -53,34 +53,4 @@ function moveSlide(albumId, direction) {
     img.addEventListener("click", () => openModal(img.src));
   })
 
-    function enableSwipe(carouselId) {
-    const carousel = document.getElementById(carouselId);
-    let startX = 0;
-    let endX = 0;
-
-    carousel.addEventListener("touchstart", (e) => {
-      startX = e.touches[0].clientX;
-    });
-
-    carousel.addEventListener("touchend", (e) => {
-      endX = e.changedTouches[0].clientX;
-      handleSwipe(carouselId, startX, endX);
-    });
-  }
-
-  function handleSwipe(carouselId, startX, endX) {
-    const threshold = 50; // distância mínima para considerar swipe
-    const direction = startX - endX;
-
-    if (Math.abs(direction) > threshold) {
-      if (direction > 0) {
-        moveSlide(carouselId.replace("carousel-", ""), 1); // swipe esquerda → próxima imagem
-      } else {
-        moveSlide(carouselId.replace("carousel-", ""), -1); // swipe direita → imagem anterior
-      }
-    }
-  }
-
-  // Ativa swipe nos carrosséis
-  enableSwipe("carousel-salao");
-  enableSwipe("carousel-externa");
+  
